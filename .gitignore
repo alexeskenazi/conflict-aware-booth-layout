@@ -1,7 +1,7 @@
 *.o
 layout
-sanity
+test
 output.txt
 build/
-/.tmp_build
-/tmp
+.tmp_build
+tmp
