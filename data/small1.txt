@@ -1,0 +1,25 @@
+# rows cols
+4 8
+# number_of_booths
+10
+# booths: id category value
+0 Apparel 15
+1 Tools 12
+2 Snacks 10
+3 Apparel 9
+4 Electronics 14
+5 Tools 8
+6 Snacks 7
+7 Books 11
+8 Electronics 13
+9 Books 6
+# number_of_blocked_slots
+2
+# blocked slots: r c
+0 0
+3 7
+# position bonuses: rows x cols
+0.3 0.4 0.5 0.6 0.7 0.7 0.6 0.5
+0.4 0.5 0.6 0.7 0.8 0.8 0.7 0.6
+0.4 0.5 0.6 0.7 0.8 0.8 0.7 0.6
+0.3 0.4 0.5 0.6 0.7 0.7 0.6 0.5
