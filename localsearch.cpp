@@ -8,6 +8,8 @@ using namespace std;
 
 void LocalSearch(Layout& L, int max_iters, unsigned seed) {
     mt19937 rng(seed);
+    int no_improve_count = 0;
+    int patience = 1000;  // stop if no improvement for this many iterations
 
     for (int iter = 0; iter < max_iters; iter++) {
         double best_delta = 0.0;
@@ -94,6 +96,7 @@ void LocalSearch(Layout& L, int max_iters, unsigned seed) {
 
         // Apply best move if any improvement found
         if (best_delta > 0.0) {
+            no_improve_count = 0;  // reset counter
             if (best_move_type == 0) {
                 // Swap
                 int pos_a = -1, pos_b = -1;
@@ -120,8 +123,11 @@ void LocalSearch(Layout& L, int max_iters, unsigned seed) {
                 }
             }
         } else {
-            // No improving move found, stop
-            break;
+            // no improvement this iteration
+            no_improve_count++;
+            if (no_improve_count >= patience) {
+                break;  // stop early
+            }
         }
     }
 }
