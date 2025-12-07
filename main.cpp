@@ -6,12 +6,13 @@
 #include <iostream>
 #include <string>
 #include <random>
+#include <ctime>
 
 using namespace std;
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        cerr << "Usage: ./layout <input_file>" << endl;
+        cerr << "Usage: ./layout <input_file> [seed]" << endl;
         return 1;
     }
 
@@ -20,6 +21,14 @@ int main(int argc, char** argv) {
     Params params;
     params.wC = 0.6;
     params.wX = 0.3;
+
+    // seed for reproducibility
+    if (argc >= 3) {
+        params.seed = (unsigned)atoi(argv[2]);
+    } else {
+        params.seed = (unsigned)time(nullptr);
+    }
+    cout << "Using seed: " << params.seed << endl;
 
     Instance inst = ReadInstance(filename, params);
     Layout layout;
@@ -30,7 +39,7 @@ int main(int argc, char** argv) {
     GreedySeed(layout);
 
     cout << "Running local search..." << endl;
-    LocalSearch(layout, 10000, 0);
+    LocalSearch(layout, 10000, params.seed);
 
     // print results
     double exposure = ComputeExposure(layout);
