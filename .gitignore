@@ -5,3 +5,4 @@ output.txt
 build/
 .tmp_build
 tmp
+.DS_Store
