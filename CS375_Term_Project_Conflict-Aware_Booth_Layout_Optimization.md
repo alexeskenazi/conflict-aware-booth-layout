@@ -8,7 +8,7 @@ Layout Optimization By Vishil Patel and Alex Eskenazi
 
 ## Page 2
 
-![Page 2](CS375_Term_Project_Conflict_Aware_Booth_Layout_Optimization_assets/page_02.png)
+![Page 2](CS375_Term_Project_Conflict_Aware_Booth_Layout_Optimization_assets/page_02.jpg)
 
 ## Page 3
 
