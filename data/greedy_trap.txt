@@ -1,0 +1,27 @@
+# rows cols
+3 6
+# number_of_booths
+12
+# booths: id category value
+# Two sets of same-category booths with similar values
+# This will trick greedy into placing them nearby
+0 Food 20
+1 Food 19
+2 Food 18
+3 Tech 17
+4 Tech 16
+5 Tech 15
+6 Food 14
+7 Food 13
+8 Food 12
+9 Tech 11
+10 Tech 10
+11 Tech 9
+# number_of_blocked_slots
+1
+# blocked slots: r c
+1 2
+# position bonuses: make greedy want to place high-value booths together
+0.5 0.7 0.9 0.9 0.7 0.5
+0.6 0.8 1.0 1.0 0.8 0.6
+0.5 0.7 0.9 0.9 0.7 0.5

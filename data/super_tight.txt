@@ -1,0 +1,72 @@
+# rows cols
+7 8
+# number_of_booths
+50
+# booths: id category value
+# 56 slots - 4 blocked = 52 available, using 50 booths (96% full, 2 empty)
+# Extreme concentration in 3 categories
+0 Food 50
+1 Food 49
+2 Food 48
+3 Food 47
+4 Food 46
+5 Food 45
+6 Food 44
+7 Food 43
+8 Food 42
+9 Food 41
+10 Food 40
+11 Food 39
+12 Food 38
+13 Food 37
+14 Food 36
+15 Food 35
+16 Food 34
+17 Tech 50
+18 Tech 49
+19 Tech 48
+20 Tech 47
+21 Tech 46
+22 Tech 45
+23 Tech 44
+24 Tech 43
+25 Tech 42
+26 Tech 41
+27 Tech 40
+28 Tech 39
+29 Tech 38
+30 Tech 37
+31 Tech 36
+32 Apparel 49
+33 Apparel 48
+34 Apparel 47
+35 Apparel 46
+36 Apparel 45
+37 Apparel 44
+38 Apparel 43
+39 Apparel 42
+40 Apparel 41
+41 Apparel 40
+42 Apparel 39
+43 Apparel 38
+44 Electronics 37
+45 Electronics 36
+46 Tools 35
+47 Tools 34
+48 Snacks 33
+49 Books 32
+# number_of_blocked_slots
+4
+# blocked slots: r c
+0 0
+0 7
+6 0
+6 7
+# position bonuses: hotly contested center
+0.3 0.5 0.6 0.7 0.7 0.6 0.5 0.3
+0.4 0.6 0.8 0.9 0.9 0.8 0.6 0.4
+0.5 0.7 0.9 1.0 1.0 0.9 0.7 0.5
+0.6 0.8 1.0 1.0 1.0 1.0 0.8 0.6
+0.5 0.7 0.9 1.0 1.0 0.9 0.7 0.5
+0.4 0.6 0.8 0.9 0.9 0.8 0.6 0.4
+0.3 0.5 0.6 0.7 0.7 0.6 0.5 0.3

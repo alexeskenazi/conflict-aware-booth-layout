@@ -1,0 +1,58 @@
+# rows cols
+6 7
+# number_of_booths
+38
+# booths: id category value
+# 42 slots - 3 blocked = 39 available, using 38 booths (97% full, 1 empty)
+# Heavy concentration of Food and Tech
+0 Food 40
+1 Food 39
+2 Food 38
+3 Food 37
+4 Food 36
+5 Food 35
+6 Food 34
+7 Food 33
+8 Food 32
+9 Food 31
+10 Food 30
+11 Tech 40
+12 Tech 39
+13 Tech 38
+14 Tech 37
+15 Tech 36
+16 Tech 35
+17 Tech 34
+18 Tech 33
+19 Tech 32
+20 Tech 31
+21 Apparel 38
+22 Apparel 37
+23 Apparel 36
+24 Apparel 35
+25 Apparel 34
+26 Apparel 33
+27 Apparel 32
+28 Electronics 37
+29 Electronics 36
+30 Electronics 35
+31 Electronics 34
+32 Tools 36
+33 Tools 35
+34 Tools 34
+35 Snacks 33
+36 Books 32
+37 Jewelry 31
+# number_of_blocked_slots
+3
+# blocked slots: r c
+0 0
+2 3
+5 6
+# position bonuses: strong gradient to center
+0.4 0.6 0.7 0.8 0.7 0.6 0.4
+0.5 0.7 0.9 1.0 0.9 0.7 0.5
+0.6 0.8 1.0 1.0 1.0 0.8 0.6
+0.6 0.8 1.0 1.0 1.0 0.8 0.6
+0.5 0.7 0.9 1.0 0.9 0.7 0.5
+0.4 0.6 0.7 0.8 0.7 0.6 0.4

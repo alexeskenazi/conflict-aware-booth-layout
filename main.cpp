@@ -34,11 +34,20 @@ int main(int argc, char** argv) {
     Layout layout;
     layout.inst = inst;
 
-    // run greedy then local search
+    // run greedy
     cout << "Running greedy..." << endl;
     GreedySeed(layout);
 
-    cout << "Running local search..." << endl;
+    double greedy_score = ComputeTotalScore(layout);
+    int greedy_row_clash = ComputeRowClash(layout);
+    int greedy_across_clash = ComputeAcrossAisleClash(layout);
+
+    cout << "Greedy Score: " << greedy_score << endl;
+    cout << "  Row Clashes: " << greedy_row_clash << endl;
+    cout << "  Across Clashes: " << greedy_across_clash << endl;
+
+    // run local search
+    cout << "\nRunning local search..." << endl;
     LocalSearch(layout, 10000, params.seed);
 
     // print results
@@ -48,9 +57,11 @@ int main(int argc, char** argv) {
     double total_score = ComputeTotalScore(layout);
 
     cout << "\nFinal Score: " << total_score << endl;
+    cout << "  Row Clashes: " << row_clash << endl;
+    cout << "  Across Clashes: " << across_clash << endl;
+    cout << "\nImprovement: +" << (total_score - greedy_score) << endl;
+    cout << "  Clashes removed: " << ((greedy_row_clash + greedy_across_clash) - (row_clash + across_clash)) << endl;
     cout << "Exposure: " << exposure << endl;
-    cout << "Row Clashes: " << row_clash << endl;
-    cout << "Across Clashes: " << across_clash << endl;
     cout << endl;
 
     PrintLayout(layout);
